@@ -1,0 +1,21 @@
+Time taken: 6 hours just taking too much time to add a bunch of stuff
+
+
+improvements and stuff I couldn't figure out:
+Add search with filters, possibly dynamic.
+add back in functionality in form for image upload, how to do this without making api post route too convoluted.
+
+
+how to pass wtforms validator errors through js axios??:
+possibly pass the errors in axios error handling, need this validators to handle a lot of small problems with the db entries, like default image and correct data.
+
+add update form, pass template using js to change it from add to update probably and use same form helpers.
+
+add delete button, use delete api route
+
+clean up js, rewrite some stuff in jquery syntax. 
+
+how or what what be good examples of implementing the js using classes?? as mentioned in the further study.
+
+
+more testing

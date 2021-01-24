@@ -1,0 +1,22 @@
+{% from "_formhelpers.html" import render_input_field %}
+<div class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Add a Cupcake</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+			<form id="cupcake-form" method="POST" enctype="multipart/form-data">
+				{{ form.hidden_tag() }} {% for field in form if field.widget.input_type !=
+				'hidden' %} {{ render_input_field(field)}} {% endfor %}
+			</form>
+		</section>
+		<footer class="modal-card-foot is-justify-content-flex-end">
+			<button class="button is-info" type="submit" form="cupcake-form">
+				Save changes
+			</button>
+			<button class="button" id="btn-modal-close">Cancel</button>
+		</footer>
+	</div>
+</div>
